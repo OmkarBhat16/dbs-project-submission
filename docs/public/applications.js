@@ -5,7 +5,7 @@ async function fetchProjects() {
         "Authorization": "Bearer " + localStorage.getItem("token"),
     };
     try {
-        const response = await fetch("http://localhost:8080/application/", {
+        const response = await fetch("https://dbs-project-txgt.onrender.com/application/", {
             method: "GET",
             headers: headersList
         });
@@ -92,7 +92,7 @@ async function getUserDetails(user_id){
          user_id : user_id,
        });
        
-       let response = await fetch("http://localhost:8080/user/", { 
+       let response = await fetch("https://dbs-project-txgt.onrender.com/user/", { 
          method: "GET",
          body: bodyContent,
          headers: headersList
@@ -198,7 +198,7 @@ async function putApplications(status) {
         "status": status
     });
 
-    let response = await fetch("http://localhost:8080/application/act", {
+    let response = await fetch("https://dbs-project-txgt.onrender.com/application/act", {
         method: "POST",
         body: bodyContent,
         headers: headersList

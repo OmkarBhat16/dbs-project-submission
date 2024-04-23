@@ -16,7 +16,7 @@ async function fetchUserType() {
     }
     let response;
     try {
-        response = await fetch("http://localhost:8080/user/", { 
+        response = await fetch("https://dbs-project-txgt.onrender.com/user/", { 
             method: "GET",
             headers: headersList
         });
