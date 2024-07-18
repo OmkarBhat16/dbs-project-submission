@@ -5,7 +5,7 @@ async function fetchPeers() {
         "Authorization": "Bearer " + localStorage.getItem("token"),
     };
 
-    let response = await fetch("https://dbs-project-txgt.onrender.com/peers", {
+    let response = await fetch("https://mentormatch-backend.onrender.com/peers", {
         method: "GET",
         headers: headersList
     });
@@ -90,7 +90,7 @@ async function getUserDetails(user_id){
          user_id : user_id,
        });
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/user/", { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/user/", { 
          method: "GET",
          body: bodyContent,
          headers: headersList
@@ -191,7 +191,7 @@ async function fetchSkills(id){
         "Authorization": "Bearer "+localStorage.getItem("token"),
        }
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/user/skills/"+id, { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/user/skills/"+id, { 
          method: "GET",
          headers: headersList
        });
@@ -209,7 +209,7 @@ async function fetchExperiences(id){
         "Authorization": "Bearer "+localStorage.getItem("token"),
        }
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/user/experience/"+id, { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/user/experience/"+id, { 
          method: "GET",
          headers: headersList
        });
@@ -228,7 +228,7 @@ async function fetchProjects(id){
         "Authorization": "Bearer "+localStorage.getItem("token"),
        }
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/projects/"+id, { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/projects/"+id, { 
          method: "GET",
          headers: headersList
        });

@@ -25,7 +25,7 @@ async function fetchData1() {
     }
     let response;
     try {
-        response = await fetch("https://dbs-project-txgt.onrender.com/projects/", {
+        response = await fetch("https://mentormatch-backend.onrender.com/projects/", {
             method: "GET",
             headers: headersList
         });
@@ -51,7 +51,7 @@ async function fetchData2() {
     }
     let response;
     try {
-        response = await fetch("https://dbs-project-txgt.onrender.com/user/", {
+        response = await fetch("https://mentormatch-backend.onrender.com/user/", {
             method: "GET",
             headers: headersList
         });
@@ -140,7 +140,7 @@ async function getSkills(userid) {
         "Authorization": "Bearer "+localStorage.getItem("token"),
        }
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/user/skills/"+userid, { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/user/skills/"+userid, { 
          method: "GET",
          headers: headersList
        });
@@ -157,7 +157,7 @@ async function getExperiences(userid) {
         "Authorization": "Bearer "+localStorage.getItem("token"),
        }
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/user/experience/"+userid, { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/user/experience/"+userid, { 
          method: "GET",
          headers: headersList
        });
@@ -202,7 +202,7 @@ async function createProject() {
     );
     console.log(bodyContent);
 
-    let response = await fetch("https://dbs-project-txgt.onrender.com/projects/create", {
+    let response = await fetch("https://mentormatch-backend.onrender.com/projects/create", {
         method: "POST",
         body: bodyContent,
         headers: headersList
@@ -333,7 +333,7 @@ async function postUpdateSkills(skillsArray) {
          "skills" : skillsArray
        });
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/user/skills/add", { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/user/skills/add", { 
          method: "POST",
          body: bodyContent,
          headers: headersList
@@ -386,7 +386,7 @@ async function postUpdateExperience(experience) {
          "description": document.getElementById("exp-desc").value,
        });
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/user/experience/add", { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/user/experience/add", { 
          method: "POST",
          body: bodyContent,
          headers: headersList

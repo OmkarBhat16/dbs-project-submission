@@ -85,7 +85,7 @@ async function register(){
        }
        );
        
-       let response = await fetch("https://dbs-project-txgt.onrender.com/register", { 
+       let response = await fetch("https://mentormatch-backend.onrender.com/register", { 
          method: "POST",
          body: bodyContent,
          headers: headersList

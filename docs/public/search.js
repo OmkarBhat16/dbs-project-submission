@@ -6,7 +6,7 @@ async function fetchProjects() {
     }
     let response;
     try {
-        response = await fetch("https://dbs-project-txgt.onrender.com/projects/all", {
+        response = await fetch("https://mentormatch-backend.onrender.com/projects/all", {
             method: "GET",
             headers: headersList
         });
@@ -284,7 +284,7 @@ async function applyProject() {
     });
 
     try {
-            let response = await fetch("https://dbs-project-txgt.onrender.com/application/apply", {
+            let response = await fetch("https://mentormatch-backend.onrender.com/application/apply", {
             method: "POST",
             body: bodyContent,
             headers: headersList

@@ -16,7 +16,7 @@ async function fetchUserType() {
     }
     let response;
     try {
-        response = await fetch("https://dbs-project-txgt.onrender.com/user/", { 
+        response = await fetch("https://mentormatch-backend.onrender.com/user/", { 
             method: "GET",
             headers: headersList
         });

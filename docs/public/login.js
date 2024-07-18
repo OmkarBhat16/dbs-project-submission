@@ -22,7 +22,7 @@ function getData(username, password){
        
     const fetchData = async () => {
         try {
-            let response = await fetch("https://dbs-project-txgt.onrender.com/login", {
+            let response = await fetch("https://mentormatch-backend.onrender.com/login", {
                 method: "POST",
                 body: bodyContent,
                 headers: headersList
